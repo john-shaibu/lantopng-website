@@ -1,0 +1,189 @@
+@import "base.css";
+
+
+.contact-hero{
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: var(--blue-purple-gradient); */
+    /* margin-bottom: var(--section-bottom-margin); */
+}
+.contact-hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-hero-text h1{
+    font-family: var(--header-font);
+    font-size: 9.6em;
+    letter-spacing: 1px;
+    /* text-shadow: var(--soft-shadow); */
+    -webkit-text-stroke: 2px var(--blue-color);
+    color: transparent;
+    transition: all .3s;
+    /* cursor: pointer; */
+}
+.contact-hero-text span{
+    color: var(--blue-color);
+    font-weight: 600;
+}
+.form {
+    margin-bottom: var(--section-bottom-margin);
+}
+.form form{
+    display: flex;
+    gap: 10em;
+    flex-direction: column;
+}
+form span{
+    font-size: 4em;
+    color: var(--light-grey-color);
+    font-family: var(--lettering-font);
+    font-weight: 600;
+}
+form > div{
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    width: 100%;
+}
+form .options{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+form label{
+    padding: 0 1.5em;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--light-grey-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--lettering-font);
+    font-size: 2em;
+    color: var(--black-color);
+    font-weight: 500;
+    transition: all .2s;
+    
+}
+.options input[type="radio"], input[type="file"]{
+    display: none;
+}
+
+form input, form textarea{
+    height: 80px;
+    border: none;
+    border-bottom: 2px solid var(--light-grey-color);
+    outline: none;
+    font-family: var(--lettering-font);
+    font-size: 2.8em;
+    transition: all .3s;
+}
+input[type="file"]{
+    border-bottom: none;
+}
+form button{
+    font-family: var(--lettering-font);
+
+}
+form textarea{
+    height: 120px;
+}
+form input:focus, form textarea:focus{
+    border-bottom: 2px solid var(--blue-color);
+}
+form input::placeholder, form textarea::placeholder{
+    /* font-weight: 600; */
+    color: var(--light-grey-color);
+}
+form .attachment{
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.attachment span{
+    color: var(--black-color);
+    font-size: 2.4em;
+    transition: all .3s;
+}
+.attachment > :first-child{
+    color: var(--black-color);
+    /* font-size: 2em; */
+    transition: all .3s;
+}
+.attachment:hover > :first-child, .attachment:hover > span{
+    color: var(--light-grey-color);
+}
+form button[type='submit']{
+    font-size: 2em;
+    max-width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    color: var(--white-color);
+    background: var(--blue-purple-gradient);
+    padding: 0 1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+form button[type='submit']:hover{
+    box-shadow: var(--deep-shadow);
+}
+
+#fifty-thousand:checked ~ .fifty-thousand,
+#hundred-thousand:checked ~ .hundred-thousand,
+#two-fifty-thousand:checked ~ .two-fifty-thousand,
+#five-hundred-thousand:checked ~ .five-hundred-thousand,
+#one-million:checked ~ .one-million,
+#five-million:checked ~ .five-million,
+#ten-million:checked ~ .ten-million,
+
+#web-design:checked ~ .web-design,
+#Mobile:checked ~ .Mobile,
+#Research:checked ~ .Research,
+#Machine:checked ~ .Machine,
+#Data:checked ~ .Data,
+#Artificial:checked ~ .Artificial,
+#Internship:checked ~ .Internship
+{
+    background: var(--blue-purple-gradient);
+    border: var(--blue-color);
+    color: var(--white-color);
+    box-shadow: var(--deep-shadow);
+}
+
+@media screen and (max-width : 625px){
+    .contact-hero-text h1{
+        font-size: 4.2em;
+    }
+    .form form{
+        gap: 5em;
+    }
+    form input{
+        height: 60px;
+        font-size: 2em;
+    }
+    form span{
+        font-size: 3.2em;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .contact-hero{
+        min-height: 700px;
+    }
+    .contact-hero-text h1{
+        font-size: 9.6em;
+    }
+
+}

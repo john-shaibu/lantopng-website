@@ -1,0 +1,80 @@
+:root{
+    --blue-color: #3f37c9;
+    --black-color: #1f1f1f;
+    --white-color: #FFFFFF;
+    --grey-color: #717171;
+    --light-grey-color: #89939e;
+
+    --blue-purple-gradient: linear-gradient(45deg, #3f37c9, #3a0ca3);
+    --gradient-text-color: -webkit-linear-gradient(-45deg, #3f37c9 20%, #3a0ca3 80%);
+    --faded-background: rgb(63, 55, 201, 15%);
+    --header-font: "paytone one", sans-serif;
+    --lettering-font: "poppins", sans-serif;
+
+    --section-bottom-margin: 10em;
+
+    --soft-shadow: 0 8px 24px rgb(63, 55, 201, 15%);
+    --deep-shadow: 0 8px 24px rgb(63, 55, 201, 15%), 0 16px 40px rgb(63, 55, 201, 25%);
+
+    font-size: 62.5%;
+    margin-top: 0;
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, ul{       
+    /* line-height: 1.5; */
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.gradient-text{
+    background: var(--gradient-text-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+.header-text{
+    font-size: 3.2em;
+    line-height: 2.4em;
+    font-family: "paytone one", sans-serif;
+}
+.sub-header-text{
+    font-size: 2em;
+    font-family: 'poppins', sans-serif;
+    line-height: 2em;
+    color: var(--black-font-color);
+}
+.explore{
+    color: var(--blue-color);
+    margin-top: 1.5em;
+    font-family: var(--lettering-font);
+    font-size: 2em;
+    font-weight: 700;
+    display: inline;
+}
+.container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2em;
+    /* background-color: red; */
+}
+@media screen and (max-width : 625px) {
+    .sub-header-text{
+        font-size: 1.6em;
+    }
+    .header-text{
+        font-size: 2.4em;
+    }
+}
