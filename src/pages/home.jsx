@@ -9,6 +9,13 @@ import leader from "/illustrations/leader.svg"
 
 import companyLogo from "/icons/LANTOP LOGO.svg";
 
+import johnbaba from "/images/johnbaba.jpg";
+
+import blog_thumbnail from "/images/eagle_logo.png";
+import blog_thumbnail2 from "/images/ai.jpg";
+import blog_thumbnail3 from "/images/robot.jpg";
+import blog_thumbnail4 from "/images/hero image.jpg";
+
 
 import { Routes, NavLink, Link} from 'react-router-dom';
 import { List, X } from '@phosphor-icons/react';
@@ -100,7 +107,7 @@ const Home = () => {
             professional and innovative workforce that painstakenly provides solutions to all kinds 
             of Technology problems and bolsters human capital development.
             </p>
-            <span className="explore">- Read More</span>
+            <Link to='/company' className="explore">- Read More</Link>
           </div>
         </div>
         <div className="services-section">
@@ -185,7 +192,9 @@ const Home = () => {
                 Something beautiful <br />
                 Together...
               </b>
-              <button>Send a Messaage</button>
+              <Link to="/contact">
+                <button>Send a Messaage</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -238,6 +247,91 @@ const Home = () => {
               </a>
             </div>
             <a href='#' className="explore">- Explore Tutorials</a>
+          </div>
+        </div>
+        <div className="blog-section">
+          <div className="container">
+            <h2 className="header-text">
+              Read our blogs
+            </h2>
+            <p className="sub-header-text">
+              High quality blogs curated just for you.
+            </p>
+            <div className="blogs-container">
+              <Link to="#" className="blog">
+                <div className="blog_thumbnail">
+                <img src={blog_thumbnail3} alt="blog thumbnail " />
+                </div>
+                <div className="blog_details">
+                  <div className="blog_insight">
+                    <div className="blog_writer_details">
+                      <div className="blog_writer_thumbnail">
+                        <img src={johnbaba} alt="blog writer image" />
+                      </div>
+                      <span>John Shaibu</span>
+                    </div>
+                    <span> • </span>
+                    <p>10 mins read</p>
+                  </div>
+                  <b>10 reasons you need a website for your business.</b>
+                </div>
+              </Link>
+              <Link to="#" className="blog">
+                <div className="blog_thumbnail">
+                <img src={blog_thumbnail2} alt="blog thumbnail " />
+                </div>
+                <div className="blog_details">
+                  <div className="blog_insight">
+                    <div className="blog_writer_details">
+                      <div className="blog_writer_thumbnail">
+                        <img src={johnbaba} alt="blog writer image" />
+                      </div>
+                      <span>John Shaibu</span>
+                    </div>
+                    <span> • </span>
+                    <p>10 mins read</p>
+                  </div>
+                  <b>Why Ai might take your job in the future if you belong to these group.</b>
+                </div>
+              </Link>
+              <Link to="#" className="blog">
+                <div className="blog_thumbnail">
+                <img src={blog_thumbnail4} alt="blog thumbnail " />
+                </div>
+                <div className="blog_details">
+                  <div className="blog_insight">
+                    <div className="blog_writer_details">
+                      <div className="blog_writer_thumbnail">
+                        <img src={johnbaba} alt="blog writer image" />
+                      </div>
+                      <span>John Shaibu</span>
+                    </div>
+                    <span> • </span>
+                    <p>5 mins read</p>
+                  </div>
+                  <b>10 Lucrative side hustle in Nigeria you can venture in outside tech.</b>
+                </div>
+              </Link>
+              <Link to="#" className="blog">
+                <div className="blog_thumbnail">
+                <img src={blog_thumbnail3} alt="blog thumbnail " />
+                </div>
+                <div className="blog_details">
+                  <div className="blog_insight">
+                    <div className="blog_writer_details">
+                      <div className="blog_writer_thumbnail">
+                        <img src={johnbaba} alt="blog writer image" />
+                      </div>
+                      <span>John Shaibu</span>
+                    </div>
+                    <span> • </span>
+                    <p>15 mins read</p>
+                  </div>
+                  <b>Top 10 books to read as a programmer that will make you 10x better</b>
+                </div>
+              </Link>
+            </div>
+            <Link to="#" className='explore'>- Read more blogs</Link>
           </div>
         </div>
         <Footer />

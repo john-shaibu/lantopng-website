@@ -50,9 +50,9 @@ a{
     font-family: "paytone one", sans-serif;
 }
 .sub-header-text{
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'poppins', sans-serif;
-    line-height: 2em;
+    line-height: 40px;
     color: var(--black-font-color);
 }
 .explore{
