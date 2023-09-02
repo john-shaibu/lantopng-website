@@ -43,4 +43,12 @@
         gap: 3em;
         flex-direction: column;
     }
+    .youtube-redirect a{
+        padding: 0.5em 1em;
+        font-size: 1.6em;
+        gap: 0.825em;
+        justify-content: space-between;
+        text-align: center;
+
+    }
 }

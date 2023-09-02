@@ -799,6 +799,21 @@ footer{
     .heroText p{
         font-size: 2em;
     }
+    .feedback{
+        align-items: center;
+    }
+    .feedback .feedback-inner{
+        padding: 2em;
+    }
+    .feedback-inner p{
+        font-size: 1.8em;
+    }
+    .feedback-inner b{
+        font-size: 1.8em;
+    }
+    .feedback-inner span{
+        font-size: 1.8em;
+    }
     .call-to-action-section .container div{
         padding: 3em;
         gap: 4em;
