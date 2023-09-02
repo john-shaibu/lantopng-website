@@ -128,15 +128,23 @@ header > .cta_btn{
 .container > .innerContainer ul{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     align-items: center;
     width: 100%;
 }
+.innerContainer:nth-of-type(2) ul{
+    gap: 0;
+}
 .innerContainer:nth-of-type(2) ul > li > a{
+    color: var(--light-grey-color);
+    font-family: var(--header-font);
+    font-weight: 800;
+    font-size: 4em;
+    transition: all .3s;
+    text-align: center;
+}
+.innerContainer:nth-of-type(2) ul > li > a:hover{
     color: var(--black-color);
-    font-family: var(--lettering-font);
-    font-weight: 700;
-    font-size: 3.6em;
 }
 .innerContainer:nth-of-type(2) ul > li > a.active{
     background: var(--gradient-text-color);
@@ -146,7 +154,7 @@ header > .cta_btn{
     display: inline;
 }
 .innerContainer:last-of-type ul > li > a{
-    font-size: 2.4em;
+    font-size: 3.2em;
     color: var(--black-color);
     font-family: var(--lettering-font);
 }
@@ -427,6 +435,83 @@ header > .cta_btn{
         cursor: pointer;
     }
 }
+
+.feedback-section{
+    margin-bottom: var(--section-bottom-margin);
+}
+.feedback-section .feedback{
+    margin-top: 2em;
+    display: flex;
+    /* align-items: center; */
+    gap: 3em;
+    flex-direction: column;
+    /* position: relative; */
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.pagination-dots{
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    background-color: var(--light-grey-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.pagination-dots.active{
+    background-color: var(--blue-color);
+    max-width: 20px;
+    min-width: 20px;
+}
+.feedback .arrows{
+    background: var(--blue-purple-gradient);
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    color: var(--white-color);
+    /* position: absolute; */
+    top: 50%;
+    bottom: 50%;
+}
+
+.feedback .feedback-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em;
+    background: var(--blue-purple-gradient);
+    border-radius: 8px;
+}
+.feedback-inner p{
+    color: var(--white-color);
+    font-size: 2.4em;
+    font-family: var(--lettering-font);
+    line-height: 48px;
+}
+.feedback-inner b{
+    color: var(--white-color);
+    font-size: 2.4em;
+    font-family: var(--lettering-font);
+    margin-top: 1em;
+}
+.feedback-inner span{
+    color: var(--white-color);
+    font-size: 2em;
+    font-family: var(--lettering-font);
+    line-height: 48px;
+    font-style: italic;
+}
+
+
 .tutorials-section{
     margin-bottom: var(--section-bottom-margin);
 }
@@ -701,6 +786,9 @@ footer{
         height: 50px;
         top: 2.5em;
     }
+    .innerContainer:nth-of-type(2) ul > li > a{
+        font-size: 3em;
+    }
     .heroText > span{
         margin-bottom: 0;
     }
@@ -750,7 +838,11 @@ footer{
     
     }
 }
-
+@media screen and (max-width : 320px){
+    .call-to-action-section .container div b{
+        font-size: 3.6em;
+    }
+}
 @media screen and (min-width: 800px) {
     
     .cta_btn > .contactUsCta button {

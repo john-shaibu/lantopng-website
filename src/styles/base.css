@@ -70,6 +70,22 @@ a{
     padding: 2em;
     /* background-color: red; */
 }
+::-webkit-scrollbar{
+    background-color: var(--white-color);
+    width: 10px;
+    border-left: 1px solid var(--faded-background);
+    height: 50px;
+    transition: background-color .3s;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: var(--faded-background);
+    transition: all .3s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--blue-color);
+}
 @media screen and (max-width : 625px) {
     .sub-header-text{
         font-size: 1.6em;

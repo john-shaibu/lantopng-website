@@ -18,7 +18,7 @@ import blog_thumbnail4 from "/images/hero image.jpg";
 
 
 import { Routes, NavLink, Link} from 'react-router-dom';
-import { List, X } from '@phosphor-icons/react';
+import { ArrowLeft, ArrowRight, List, X } from '@phosphor-icons/react';
 
 import { useState, useEffect } from 'react';
 import Header from './components/header';
@@ -146,7 +146,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <Link  to='' className='explore'>- Explore Services</Link>
+            <Link  to='/services' className='explore'>- Explore Services</Link>
           </div>
         </div>
         <div className="core-values-section">
@@ -184,6 +184,42 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="feedback-section">
+          <div className="container">
+            <div className="feedbacks-container">
+              <h2 className="header-text">Feedback</h2>
+              <p className="sub-header-text">
+                Here are some feedbacks from students we have trained and clients we have worked with in the past.
+              </p>
+              <div className="feedback">
+                {/* <div className="arrows left">
+                  <ArrowLeft size={32}/>
+                </div> */}
+                <div className="feedback-inner">
+                  <p>
+                    I will like to describe my experience at Lantop Infotech in one word "exceptional", cause 
+                    it's the best you can get anywhere all over the word. Would definitely recommend.
+                  </p>
+                  <b>John Onimisii Shaibu</b>
+                  <span>- Software Engineer</span>
+                </div>
+                {/* <div className="arrows right">
+                  <ArrowRight size={32}/>
+                </div> */}
+                <div className="pagination">
+                  <div className="pagination-dots"></div>
+                  <div className="pagination-dots active"></div>
+                  <div className="pagination-dots"></div>
+                  <div className="pagination-dots"></div>
+                  <div className="pagination-dots"></div>
+                  <div className="pagination-dots"></div>
+                  <div className="pagination-dots"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="call-to-action-section">
           <div className="container">
             <div>
@@ -198,57 +234,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="tutorials-section">
-          <div className="container">
-            <h2 className='header-text'>Tutorials</h2>
-            <p className='sub-header-text'>
-              As part of the objectives for human capital and national development, 
-              software trainings.   
-            </p>
-            <div className="tutorials-container">
-              <a href='#' className="tutorial">
-                <div className="tutorial_thumbnail">
-                  <img src={banner} alt="tutorial thumbnail" />
-                </div>
-                <div className="tutorial_info">
-                  <div className="tutorial_tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Numpy</span>
-                  </div>
-                  <b className="tutorial_header">
-                    How to train a large csv data using Python
-                  </b>
-                  <p>
-                    As part of the objectives for human capital and national development, 
-                    software trainings.
-                    As part of the objectives for human capital...
-                  </p>
-                </div>
-              </a>
-              <a href='#' className="tutorial">
-                <div className="tutorial_thumbnail">
-                  <img src={banner} alt="tutorial thumbnail" />
-                </div>
-                <div className="tutorial_info">
-                  <div className="tutorial_tags">
-                    <span>ReactJs</span>
-                    <span>Rapid api</span>
-                  </div>
-                  <b className="tutorial_header">
-                    Building an Ai website using reactJs and RapidApi
-                  </b>
-                  <p>
-                    As part of the objectives for human capital and national development, 
-                    software trainings.
-                    As part of the objectives for human capital...
-                  </p>
-                </div>
-              </a>
-            </div>
-            <a href='#' className="explore">- Explore Tutorials</a>
-          </div>
-        </div>
         <div className="blog-section">
           <div className="container">
             <h2 className="header-text">
@@ -258,7 +243,7 @@ const Home = () => {
               High quality blogs curated just for you.
             </p>
             <div className="blogs-container">
-              <Link to="#" className="blog">
+              <Link to="/blog/1" className="blog">
                 <div className="blog_thumbnail">
                 <img src={blog_thumbnail3} alt="blog thumbnail " />
                 </div>
@@ -276,7 +261,7 @@ const Home = () => {
                   <b>10 reasons you need a website for your business.</b>
                 </div>
               </Link>
-              <Link to="#" className="blog">
+              <Link to="/blog/1" className="blog">
                 <div className="blog_thumbnail">
                 <img src={blog_thumbnail2} alt="blog thumbnail " />
                 </div>
@@ -291,10 +276,10 @@ const Home = () => {
                     <span> • </span>
                     <p>10 mins read</p>
                   </div>
-                  <b>Why Ai might take your job in the future if you belong to these group.</b>
+                  <b>The Growing Importance of Data Integration in Modern Businesses.</b>
                 </div>
               </Link>
-              <Link to="#" className="blog">
+              <Link to="/blog/1" className="blog">
                 <div className="blog_thumbnail">
                 <img src={blog_thumbnail4} alt="blog thumbnail " />
                 </div>
@@ -312,7 +297,7 @@ const Home = () => {
                   <b>10 Lucrative side hustle in Nigeria you can venture in outside tech.</b>
                 </div>
               </Link>
-              <Link to="#" className="blog">
+              <Link to="/blog/1" className="blog">
                 <div className="blog_thumbnail">
                 <img src={blog_thumbnail3} alt="blog thumbnail " />
                 </div>

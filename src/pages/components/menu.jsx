@@ -17,10 +17,16 @@ const Menu = (props) => {
                 <NavLink to='/'>Home</NavLink>
                 </li>
                 <li>
-                <NavLink to='/company'>Who we are</NavLink>
+                <NavLink to='/company'>Get to know us</NavLink>
                 </li>
                 <li>
-                <NavLink to='/services'>What we do</NavLink>
+                <NavLink to='/services'>What we offer</NavLink>
+                </li>
+                <li>
+                <NavLink to='/tutorials'>Tutorials</NavLink>
+                </li>
+                <li>
+                <NavLink to='/blog'>Our blogs</NavLink>
                 </li>
                 <li>
                 <NavLink to='/contact'>Contact us</NavLink>
