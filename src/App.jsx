@@ -34,6 +34,7 @@ function App() {
             <Route exact path='/company' element={<About />} />
             <Route exact path='/services' element={<Services />} />
             <Route exact path='/tutorials' element={<Tutorials />} />
+<<<<<<< HEAD
             <Route exact path='/blog' element={<BlogPage />} />
             <Route exact path='/blog/1' element={<Blog1 />}/>
             <Route exact path='/blog/2' element={<Blog2 />}/>
@@ -44,6 +45,18 @@ function App() {
             <Route exact path='/blog/7' element={<Blog7 />}/>
             <Route exact path='/blog/8' element={<Blog8 />}/>
 
+=======
+            <Route exact path='/blog'>
+              <Route exact path='1' element={<Blog />}/>
+              <Route exact path='2' element={<Blog />}/>
+              <Route exact path='3' element={<Blog />}/>
+              <Route exact path='4' element={<Blog />}/>
+              <Route exact path='5' element={<Blog />}/>
+              <Route exact path='6' element={<Blog />}/>
+              <Route exact path='7' element={<Blog />}/>
+              <Route exact path='' element={<BlogPage />} />
+            </Route>
+>>>>>>> 1e01b7717ca635261a2843c57a50c34ba013efc0
             <Route exact path='/contact' element={<Contact />} />
         </Routes>
       </Router>
