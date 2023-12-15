@@ -45,6 +45,64 @@ const Home = () => {
     };
   }, []);
 
+  const feedbackData = [
+    {
+      id: 1,
+      text: 'I will like to describe my experience at Lantop Infotech in one word "exceptional", cause its the best you can get anywhere all over the word. Would definitely recommend.',
+      author: 'John Doe',
+      post : 'Software Engineer'
+    },
+    {
+      id: 2,
+      text: 'Working with Lantop Infotech was a game-changer for our business. ' + 
+            'Their web development expertise helped us revamp our online presence, and their AI-driven solutions boosted our efficiency. ' + 
+            'Plus, their research and project writing team delivered top-notch results for our proposals. ' + 
+            'Truly a one-stop solution for tech and research needs!',
+      author: 'Jamiu Adewale',
+      post: 'Head of operations, Optimal'
+    },
+    {
+      id: 3,
+      text: ' As an intern at Lantop, I had an incredible learning experience. Their training program provided me with a solid foundation in web development and AI. The hands-on projects were invaluable in honing my skills, and the mentorship I received was exceptional. I am now a confident developer, thanks to Lantop infotech',
+      author: 'Robert Johnson',
+      post: 'Former Intern'
+    },
+    {
+      id: 4,
+      text: 'Interning at Lantop Infotech was a turning point in my career.' +
+            'The exposure to real-world research and project writing tasks was enlightening. ' + 
+            'The guidance and feedback from experienced professionals were instrumental in my growth. ' +
+            'I left with not just knowledge but also practical skills that set me apart in my field',
+      author: 'Olapoju Samuel',
+      post: 'Former Intern'
+    },
+    {
+      id: 5,
+      text: 'We engaged Lantop for research writing services,' +
+            "and they delivered outstanding results. Their team's ability to conduct thorough research and craft " +
+            'compelling content was impressive. They took our project to the next level, ' + 
+            'and we are extremely satisfied with their professionalism and expertise.', 
+      author: 'Fred Golfman',
+      post: 'Project writing Client'
+    },
+  ];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-scroll the slider
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % feedbackData.length);
+    }, 5000); // Change slide every 5 seconds (adjust as needed)
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const handleIndicatorClick = (index) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <div className='site'>
         <div className="hero">
@@ -120,29 +178,39 @@ const Home = () => {
               <div className="service">
                 <b>Software Development</b>
                 <p className='sub-header-text'>
-                  As part of the objectives for human capital and national development, 
-                  software trainings are carried out in areas of web developments.
+                  Our team of skilled full-stack developers understands the intricate dance between 
+                  front-end and back-end development. 
+                  We specialize in creating softwares that captivate your audience, 
+                  while also ensuring they run smoothly under the hood.
+                  Join us on this exciting journey of innovation, learning, and growth. Let's shape the future of the web together.
                 </p>
               </div>
               <div className="service">
                 <b>Training / Internhip</b>
                 <p className='sub-header-text'>
-                  As part of the objectives for human capital and national development, 
-                  software trainings are carried out in areas of web developments.
+                Are you a passionate learner looking to kickstart your career in software engineering? 
+                Or perhaps you're seeking hands-on experience to take your skills to the next level? 
+                Look no further! Our comprehensive internship programs are designed 
+                to provide you with real-world experience and the knowledge you need to succeed in this ever-evolving field.
+                
                 </p>
               </div>
               <div className="service">
                 <b>Ai / Machine Learning</b>
                 <p className='sub-header-text'>
-                  As part of the objectives for human capital and national development, 
-                  software trainings are carried out in areas of web developments.
+                In the age of intelligence, we believe in harnessing the potential of Machine Learning and AI to 
+                solve complex problems and make groundbreaking advancements. 
+                From predictive analytics to natural language processing, 
+                we're at the forefront of developing AI-driven solutions that shape the future.
                 </p>
               </div>
               <div className="service">
                 <b>Research</b>
                 <p className='sub-header-text'>
-                  As part of the objectives for human capital and national development, 
-                  software trainings are carried out in areas of web developments.
+                Do you have a vision that requires thorough research and expert project execution? 
+                Whether it's an academic research paper, a business proposal, or a tech project, 
+                we offer comprehensive research writing and project development services. 
+                Our team of skilled professionals is committed to providing you with exceptional results.
                 </p>
               </div>
             </div>
@@ -192,29 +260,37 @@ const Home = () => {
                 Here are some feedbacks from students we have trained and clients we have worked with in the past.
               </p>
               <div className="feedback">
-                {/* <div className="arrows left">
-                  <ArrowLeft size={32}/>
-                </div> */}
+                {feedbackData.map((feedback, index) => (
+                  <div
+                    key={feedback.id}
+                    className={`feedback-inner slide ${index === currentSlide ? 'active' : ''}`}
+                  >
+                    <p>{feedback.text}</p>
+                    <b>{feedback.author}</b>
+                    <span>- {feedback.post}</span>
+                  </div>
+                ))}
+                {/*
                 <div className="feedback-inner">
                   <p>
-                    I will like to describe my experience at Lantop Infotech in one word "exceptional", cause 
-                    it's the best you can get anywhere all over the word. Would definitely recommend.
+                    We engaged Lantop for research writing services, 
+                    and they delivered outstanding results. Their team's ability to conduct thorough research and craft 
+                    compelling content was impressive. They took our project to the next level, 
+                    and we are extremely satisfied with their professionalism and expertise.
                   </p>
-                  <b>John Onimisii Shaibu</b>
-                  <span>- Software Engineer</span>
-                </div>
-                {/* <div className="arrows right">
-                  <ArrowRight size={32}/>
+                  <b>Mike Fredrick</b>
+                  <span>- </span>
                 </div> */}
                 <div className="pagination">
-                  <div className="pagination-dots"></div>
-                  <div className="pagination-dots active"></div>
-                  <div className="pagination-dots"></div>
-                  <div className="pagination-dots"></div>
-                  <div className="pagination-dots"></div>
-                  <div className="pagination-dots"></div>
-                  <div className="pagination-dots"></div>
-
+                {feedbackData.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`pagination-dots indicator ${
+                      index === currentSlide ? 'active-indicator' : ''
+                    }`}
+                    onClick={() => handleIndicatorClick(index)}
+                  />
+                  ))}
                 </div>
               </div>
             </div>

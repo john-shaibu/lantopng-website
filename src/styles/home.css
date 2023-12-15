@@ -461,7 +461,7 @@ header > .cta_btn{
     border-radius: 30px;
     cursor: pointer;
 }
-.pagination-dots.active{
+.pagination-dots.active-indicator{
     background-color: var(--blue-color);
     max-width: 20px;
     min-width: 20px;
@@ -484,12 +484,15 @@ header > .cta_btn{
 }
 
 .feedback .feedback-inner{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1em;
     padding: 3em;
     background: var(--blue-purple-gradient);
     border-radius: 8px;
+}
+.feedback-inner.active{
+    display: flex;
 }
 .feedback-inner p{
     color: var(--white-color);

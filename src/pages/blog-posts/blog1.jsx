@@ -9,7 +9,7 @@ import johnbaba from "/images/johnbaba.jpg";
 import Footer from '../components/footer';
 
 
-const Blog = () => {
+const Blog1 = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     const openMenuDropdown = () => {
@@ -233,4 +233,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Blog1

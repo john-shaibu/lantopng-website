@@ -113,15 +113,15 @@ const BlogPage = () => {
                 </ul>
               </div>
             </Link>
-            <Link to="#" className="published-blog">
+            <Link to="/blog/2" className="published-blog">
               <div className="published-blog-thumbnail">
                 <img src={thumbnail} alt="" />
               </div>
               <div className="published-blog-details">
                 <span>John Shaibu • 9th June 2023</span>
-                <b>10 reason you need a website for your business in 2023</b>
+                <b>10 Evergreen Reasons Why Your Business Needs a Website</b>
                 <p>
-                  In the era of digital transformation, data isn't just a commodity
+                  In today's digital age, establishing a strong online presence is imperative...
                 </p>
                 <ul>
                   <li>python</li>
@@ -165,7 +165,7 @@ const BlogPage = () => {
         </div>
       </div>
 
-      <Outlet />
+      {/* <Outlet /> */}
 
       <Footer/>
     </div>

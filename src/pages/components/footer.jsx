@@ -6,29 +6,29 @@ const Footer = () => {
   return (
     <footer>
         <div className="container">
-        <div>
-            <div className="have-an-idea">
-            <b>Have an idea?</b>
-            <Link to="#">Tell us about it</Link>
-            </div>
-            <div className="contact-address">
-            <a href="mailto:info@lantopng.com">info@lantopng.com</a>
-            <p>
-                01, Kolabalogun Street, <br />
-                Osogbo, Osun state,<br />
-                Nigeria.
-            </p>
-            </div>
-            <p className="privacy-policy">Privacy Policy</p>
+          <div>
 
-        </div>
-        <div className="footer-socials">
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Thread</a>
-            <a href="#">Github</a>
-            <a href="#">LinkedIn</a>
-        </div>
+          </div>
+          <div className='navigations'>
+            <b>Navigation</b>
+            <div>
+              <Link to=''>Home</Link>
+              <Link to=''>Who we are?</Link>
+              <Link to=''>What we do</Link>
+              <Link to=''>Additional Services</Link>
+              <Link to=''>Contact Us</Link>
+            </div>
+          </div>
+          <div className='resources'>
+            <b>Resources</b>
+            <div>
+              <Link to=''>Blogs</Link>
+              <Link to=''>Internship</Link>
+              <Link to=''>Newsletter</Link>
+              <Link to=''>Privacy Policy</Link>
+              <Link to=''>Terms and Conditions</Link>
+            </div>
+          </div>
         </div>
     </footer>
   )

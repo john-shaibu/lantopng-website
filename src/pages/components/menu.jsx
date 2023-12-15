@@ -11,25 +11,25 @@ const Menu = (props) => {
         </div>
         <div className="innerContainer">
             <div className="links">
-            <span>Links</span>
+            {/* <span>Links</span> */}
             <ul>
                 <li>
-                <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/'>Home</NavLink>
                 </li>
                 <li>
-                <NavLink to='/company'>Get to know us</NavLink>
+                    <NavLink to='/company'>Get to know us</NavLink>
                 </li>
                 <li>
-                <NavLink to='/services'>What we offer</NavLink>
+                    <NavLink to='/services'>What we offer</NavLink>
                 </li>
                 <li>
-                <NavLink to='/tutorials'>Tutorials</NavLink>
+                    <NavLink to='/tutorials'>Tutorials</NavLink>
                 </li>
                 <li>
-                <NavLink to='/blog'>Our blogs</NavLink>
+                    <NavLink to='/blog'>Our blogs</NavLink>
                 </li>
                 <li>
-                <NavLink to='/contact'>Contact us</NavLink>
+                    <NavLink to='/contact'>Contact us</NavLink>
                 </li>
             </ul>
             </div>
