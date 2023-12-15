@@ -21,7 +21,7 @@ function App() {
             <Route exact path='/company' element={<About />} />
             <Route exact path='/services' element={<Services />} />
             <Route exact path='/tutorials' element={<Tutorials />} />
-            <Route exact path='/blog' element={<BlogPage />} >
+            <Route exact path='/blog'>
               <Route exact path='1' element={<Blog />}/>
               <Route exact path='2' element={<Blog />}/>
               <Route exact path='3' element={<Blog />}/>
@@ -29,6 +29,7 @@ function App() {
               <Route exact path='5' element={<Blog />}/>
               <Route exact path='6' element={<Blog />}/>
               <Route exact path='7' element={<Blog />}/>
+              <Route exact path='' element={<BlogPage />} />
             </Route>
             <Route exact path='/contact' element={<Contact />} />
           {/* </Switch> */}

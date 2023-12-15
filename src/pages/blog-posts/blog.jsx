@@ -7,7 +7,13 @@ import companyLogo from "/icons/lantoplogo2.svg";
 import {CalendarBlank, ClockCountdown} from "@phosphor-icons/react"
 import johnbaba from "/images/johnbaba.jpg";
 import Footer from '../components/footer';
+import { Helmet } from 'react-helmet';
 
+const Title = ({children, maxLength = 20}) => {
+    return  <Helmet>
+        <title>Lantopng | {typeof children == 'string' ? children.substring(0, maxLength)+'...' : children}</title>
+    </Helmet>
+}
 
 const Blog = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -31,7 +37,7 @@ const Blog = () => {
     <div>
         <Header openMenuDropdown = {openMenuDropdown} companyLogo = {companyLogo}/>
         <Menu closeMenuDropdown ={closeMenuDropdown} /> 
-
+        <Title>The Growing Importance of Data Integration in Modern Businesses.</Title>
         <div className="blog-read">
             <div className="container">
                 <div className="blog-header">
