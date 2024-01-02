@@ -13,14 +13,10 @@
     "@phosphor-icons/react": "^2.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-router-dom": "^6.14.1",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
-=======
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.14.1"
->>>>>>> 1e01b7717ca635261a2843c57a50c34ba013efc0
+    "slick-carousel": "^1.8.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
