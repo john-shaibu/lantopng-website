@@ -591,91 +591,74 @@ header > .cta_btn{
 }
 footer{
     background: var(--blue-purple-gradient);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4em 2em;
+    flex-direction: column;
 }
 footer{
     .container {
-        /* background-color: red; */
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 3em;
+        flex-direction: row;
+        justify-content: space-evenly;
         height: 100%;
         width: 100%;
         max-width: none;
-        padding: 2em;
-        /* background-color: green */
+
+    }
+    b, a, p{
+        color: white;
+        font-family: 'poppins';
+    }
+    b{
+        font-size: 2.2em;
+    }
+    a, p{
+        font-size: 1.8em;
+    }
+    p{
+        line-height: 2em;
+    }
+    .container div {
+        display: flex;
+        flex-direction: column;
+    }
+    .container > div{
+        gap: 2em
     }
     .container > div:first-of-type{
+        min-width: 30%;
+        max-width: 30%;
+    }
+    .container > div:first-of-type b{
+        font-size: 1.8em;
+    }
+    .container > div:first-of-type .footer_socials > ul{
         display: flex;
-        justify-content: space-evenly;
-
-        flex-direction: column;
-        /* background-color: red; */
-        height: 100%;
+        flex-direction: row;
+        gap: 1.5em;
     }
-    .container > div:first-of-type > .have-an-idea{
+    .footer_socials a{
+        padding: 12px;
+        background-color: black;
         display: flex;
-        flex-direction: column;
-        /* gap: 1em; */
-    }
-    .have-an-idea b{
-        font-size: 6.4em;
-        font-family: var(--lettering-font);
-        color: var(--white-color);
-    }
-    .have-an-idea a{
-        font-size: 4.2em;
-        font-family: var(--lettering-font);
-        color: var(--white-color);
-        /* letter-spacing: 1px; */
-        font-weight: 400;
-        /* max-width: 300px; */
-        transition: all .3s;
-        text-decoration: underline;
-    }
-
-    .container > div:first-of-type > .contact-address{
-        display: flex;
-        gap: 4em;
-        flex-direction: column;
-    }
-    .contact-address a{
-        /* font-weight: 500; */
-        color: var(--white-color);
-        font-size: 2.8em;
-        font-family: var(--lettering-font);
-    }
-    .contact-address p{
-        font-size: 2em;
-        color: var(--white-color);
-        line-height: 36px;
-        font-family: var(--lettering-font);
-    }
-    .privacy-policy{
-        font-size: 2em;
-        color: var(--white-color);
-        font-family: var(--lettering-font);
-        font-weight: 600;
-    }
-
-    .footer-socials{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
         align-items: center;
-        min-width:100%;
-        gap: 4em;
-        /* margin-bottom: 8em; */
+        justify-content: center;
+        border-radius: 8px;
     }
-    .footer-socials a{
+    .container > div > div{
+        gap: 1em;
+    }
+    .copyright{
+        padding-top: 2em;
+    }
+    .copyright > p{
+        font-size: 1.6em;
+        font-family: 'poppins';
         color: var(--white-color);
-        font-size: 2.4em;
-        font-family: var(--lettering-font);
     }
 }
 .blog-section{
@@ -826,22 +809,19 @@ footer{
         line-height: 64px;
         /* color: red; */
     }
-    footer .container .have-an-idea b{
-        font-size: 3.6em;
+    footer{
+        padding: 4em 0.625em;
     }
-    footer .container .have-an-idea a{
-        font-size: 2.4em;
+    footer .container{
+        flex-direction: column;
+        gap: 4em;
     }
-    footer .container .contact-address a{
-        font-size: 2.4em;
+    footer .container > div{
+        width: 100%;
     }
-    footer .container .contact-address p{
-        font-size: 2em;
+    footer .container > div:first-of-type{
+        min-width: 100%;
     }
-    footer .footer-socials a{
-        font-size: 1.8em;
-    }
-
     .blog_details b{
         font-size: 1.4em;
     }
@@ -949,7 +929,6 @@ footer{
     }
     footer .container{
         flex-direction: row;
-        padding: 0 8em;
     }
     footer .footer-socials{
         display: flex;
