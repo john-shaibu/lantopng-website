@@ -609,17 +609,17 @@ footer{
         max-width: none;
 
     }
-    b, a, p{
+    :is(b, a, p){
         color: white;
         font-family: 'poppins';
     }
-    b{
+    :is(b){
         font-size: 2.2em;
     }
-    a, p{
+    :is(a, p){
         font-size: 1.8em;
     }
-    p{
+    :is(p){
         line-height: 2em;
     }
     .container div {
