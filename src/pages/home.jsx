@@ -18,7 +18,6 @@ import blog_thumbnail4 from "/images/hero image.jpg";
 
 
 import { Routes, NavLink, Link} from 'react-router-dom';
-import { ArrowLeft, ArrowRight, List, X } from '@phosphor-icons/react';
 
 import { useState, useEffect } from 'react';
 import Header from './components/header';
@@ -134,15 +133,15 @@ const Home = () => {
         <div className="insights">
           <div className="container">
             <div>
-              <b className='gradient-text'>100+</b>
+              <b className='gradient-text'>500+</b>
               <span>Students Trained</span>
             </div>
             <div>
-              <b className='gradient-text'>200+</b>
+              <b className='gradient-text'>1000+</b>
               <span>Projects completed</span>
             </div>
             <div>
-              <b className="gradient-text">40+</b>
+              <b className="gradient-text">100+</b>
               <span>Team members</span>
             </div>
             <div>

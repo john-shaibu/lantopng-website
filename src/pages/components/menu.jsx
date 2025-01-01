@@ -26,7 +26,13 @@ const Menu = (props) => {
                     <NavLink to='/tutorials'>Tutorials</NavLink>
                 </li>
                 <li>
+                    <NavLink to='/career'>Career</NavLink>
+                </li>
+                <li>
                     <NavLink to='/blog'>Our blogs</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/syllabus'>Our syllabus</NavLink>
                 </li>
                 <li>
                     <NavLink to='/contact'>Contact us</NavLink>

@@ -1,0 +1,64 @@
+
+
+.syllabus{
+    background-color: var(--white-color);
+    border-top: 1px solid var(--light-grey-color);
+}
+.syllabus_container{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 2em;
+    justify-content: space-between;
+    padding-block: 50px;
+}
+.syllabus_container_inner{
+    background-color: var(--white-color);
+    border-radius: 12px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--soft-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    font-family: var(--header-font);
+    color: var(--blue-color);
+    border: 1px solid var(--faded-background);
+    transition: all .3s;
+    font-size: 2.4em;
+}
+.syllabus_container_inner:hover{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+
+}
+.track-inner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    font-family: var(--lettering-font);
+    font-size: 1.8em;
+    color: var(--black-color);
+    }
+.track-inner-container h2{
+    font-family: var(--header-font);
+    margin-top: 1em;
+    font-size: 2.2em;
+}
+.track-inner-container li{
+    padding-block: 1.5em;
+    border-bottom: 1px solid var(--light-grey-color);
+    line-height: 2em;
+}
+.track-inner-container li:first-of-type{
+    font-weight: 800;
+    color: var(--blue-color);
+}
+
+@media screen and (max-width : 626px) {
+    .syllabus_container{
+        grid-template-columns: 100%;
+    }
+}
