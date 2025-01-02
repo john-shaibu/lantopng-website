@@ -6,7 +6,9 @@ import companyLogo from "/icons/lantoplogo2.svg";
 import "../styles/blog_home.css";
 import thumbnail from "/images/robot.jpg";
 import thumbnail2 from "/images/ai.jpg";
-import thumbnail3 from "/images/eagle_logo.png";
+// import thumbnail3 from "/images/eagle_logo.png";
+import pca from "/images/pca.webp";
+import matlab from "/images/matlab.svg";
 import BlogItem from "./components/BlogItem";
 
 const BlogPage = () => {
@@ -22,17 +24,19 @@ const BlogPage = () => {
      };
      useEffect(() => {
           return () => {
-               // This cleanup function will be called when the component unmounts
                closeMenuDropdown();
           };
      }, []);
 
+
+     console.log(openMenu)
+
      const blogs = [
           {
-               link: "#",
-               thumbnail: thumbnail,
+               link: "/blog/pca-implementation-guide",
+               thumbnail: pca,
                date: "John Shaibu • 9th June 2023",
-               title: "Lucrative side hustles you can venture in.",
+               title: "A Comprehensive Guide to Implementing Principal Component Analysis (PCA) in MATLAB",
                description:
                     "In the era of digital transformation, data isn't just a commodity",
                tags: ["python", "Datetime"],
@@ -47,8 +51,8 @@ const BlogPage = () => {
                tags: ["react", "router"],
           },
           {
-               link: "#",
-               thumbnail: thumbnail3,
+               link: "/blog/object-motion-gravity-air-resistance",
+               thumbnail: matlab,
                date: "John & Olarenwaju • 1st January 2025",
                title: "Simulating Object Motion Under Gravity with Air Resistance: A MATLAB Implementation",
                description:

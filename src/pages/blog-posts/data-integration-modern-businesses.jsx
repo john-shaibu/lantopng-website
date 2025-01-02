@@ -1,8 +1,8 @@
-import React from 'react';
 import '../../styles/blog.css';
 import Header from '../components/header';
 import Menu from '../components/menu';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import companyLogo from "/icons/lantoplogo2.svg";
 import {CalendarBlank, ClockCountdown} from "@phosphor-icons/react"
 import johnbaba from "/images/johnbaba.jpg";
@@ -10,12 +10,18 @@ import Footer from '../components/footer';
 import { Helmet } from 'react-helmet';
 
 const Title = ({children, maxLength = 20}) => {
+    Title.propTypes = {
+        children: PropTypes.node.isRequired,
+        maxLength: PropTypes.number
+    };
     return  <Helmet>
         <title>Lantopng | {typeof children == 'string' ? children.substring(0, maxLength)+'...' : children}</title>
-    </Helmet>
+        </Helmet>
 }
 
-const Blog1 = () => {
+
+
+const DataIntegrationModernBusinesses = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     const openMenuDropdown = () => {
@@ -103,7 +109,7 @@ const Blog1 = () => {
                         Now, picture these instruments scattered across the stage, each playing independently. The result? A dissonant noise that lacks harmony and direction.
                         <br />
                         <br />
-                        Enter <a href="https://www.airbyte.com" target='_blank'>Airbyte</a>, an orchestrator of data integration. Much like a skilled conductor unifying instruments into a mesmerizing melody, 
+                        Enter <a href="https://www.airbyte.com" target='_blank' rel='noreferrer'>Airbyte</a>, an orchestrator of data integration. Much like a skilled conductor unifying instruments into a mesmerizing melody, 
                         Airbyte seamlessly brings together a diverse array of data sources, transforming their individual notes into a harmonious composition. 
                         But Airbyte doesn't stop at merely joining the chorus; it ensures that the combined insights resonate, creating a symphony of understanding.
                         <br />
@@ -239,4 +245,4 @@ const Blog1 = () => {
   )
 }
 
-export default Blog1
+export default DataIntegrationModernBusinesses
