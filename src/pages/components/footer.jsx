@@ -67,7 +67,7 @@ const Footer = () => {
                                         </a>
                                    </li>
                                    <li>
-                                        <a href="https://www.instagram.com">
+                                        <a href="https://www.instagram.com/lantopontop/">
                                              <InstagramLogo
                                                   size={24}
                                                   weight="fill"
