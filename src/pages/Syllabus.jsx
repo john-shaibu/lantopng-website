@@ -24,6 +24,10 @@ const syllabus_data = [
         link : '/syllabus/fullstack',
         name: 'Fullstack Track'
     },
+    {
+        link : '/syllabus/data-analysis',
+        name: 'Data analysis Track'
+    },
 ]
 
 

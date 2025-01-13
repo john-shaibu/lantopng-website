@@ -236,63 +236,7 @@ explained_variance_ratio = sum(svalues(1:num_new_space)) / total_variance; % Rat
                                    apply PCA to various datasets and enhance
                                    your data analysis capabilities!
                               </p>
-                              <h5>Citations</h5>
-                              <ul>
-                                   <li>
-                                        <a
-                                             href="https://courses.grainger.illinois.edu/bioe298b/sp2018/Lecture%20Examples/23%20PCA%20slides.pdf"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://courses.grainger.illinois.edu/bioe298b/sp2018/Lecture%20Examples/23%20PCA%20slides.pdf
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a
-                                             href="https://www.mathworks.com/matlabcentral/fileexchange/24322-principal-component-analysis-pca-in-matlab"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://www.mathworks.com/matlabcentral/fileexchange/24322-principal-component-analysis-pca-in-matlab
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a
-                                             href="https://www.maskaravivek.com/post/principal-component-analysis-in-matlab/"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://www.maskaravivek.com/post/principal-component-analysis-in-matlab/
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a
-                                             href="https://www.youtube.com/watch?v=YafpOzp88do"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://www.youtube.com/watch?v=YafpOzp88do
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a
-                                             href="https://www.mathworks.com/help/stats/pca.html"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://www.mathworks.com/help/stats/pca.html
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a
-                                             href="https://github.com/Lantop1k/pca"
-                                             target="_blank"
-                                             rel="noopener noreferrer"
-                                        >
-                                             https://github.com/Lantop1k/pca
-                                        </a>
-                                   </li>
-                              </ul>
+                             
                          </div>
                     </div>
                </div>
